@@ -126,4 +126,44 @@ La marge de phase est orienté selon les valeurs de l'abscisse croissantes.\par
 
 \section{Réponse indicielle}
 
+\par
+Dans cette deuxieme partie on va s'interesser a l'identification des systemes, c'est a dire 
+trouver une fonction de transfert, qui décrit au plus proche notre systeme. Il est demandé de tracer
+la \textit{caractéristique statique} de notre systeme, qui est la courbe qui représente la sortie
+en fonction de l'entrée. Lorsque notre systeme est linéaire, la caractéristique statique est
+une droite de pente $A$, l'amplification . En réalité étant donné que le domaine linéaire de la caractéristique statique est
+toujours limité (par exemple par la tension de saturation des amplificateurs opérationnelles), c'est a dire 
+que la droite n'a pas en tant que limite en $\pm \infty$ l'infini, deux points de cassures, a partir desquelles
+la pente devient nulle.
+Pour les systemes de premiere ordre de type passe-bas, on peut décrire le systeme dans le domaine de Laplace
+par la fonction 
+\[
+    F_{1}(p) = \frac{A}{1 + \tau p}     
+\]
+ou $A$ représente l'amplification dans la bande passante (pour les passe-bas c'est aussi\\ l'amplification statique, dans ce cas sans unité)
+et $\tau$ le constant de temps. Il est ici possible de déterminer l'amplification $A$ en soumettant notre systeme
+a une entrée de type échelon de fréquence $f << 10Hz$. Ceci en realité est faite en mettant un signale carré de fréquence faible. Pour mesurer $\tau$ il suffit de mesurer le temps de réponse a 5 pourcent
+c'est a dire le temps a partir duquel la réponse est autour de sa valeur en régime permanent en ne plus dépassant $\pm 5\%$ de cette valeur. On peut bien visualiser
+le régime permanent et transitoire au meme temps, si on choisit une fréquence telle que le temps de réponse a $5\%$ est égale a la moitié de la demi-période de notre
+signale d'entrée:
+\[
+    \frac{T_{E}}{4} = t_{5\%}
+\]
+ou $T_{E}$ est la période du signale d'entrée.
+\par
+Lorsqu'on souhaite de mesurer ces caractéristiques avec un entrée harmonique (sinusoidale) on peut soumettre le systeme
+a un signale sinusoidale de fréquence basse, et on mesure le rapport des valeurs maximums des allures des sortie par rapport a 
+l'entrée. Pour trouver $\tau$ on peut mesurer la fréquence de coupure a $-3dB$ en sachant que 
+$f_{-3dB} = 2 \pi \omega_{0}$ donc
+\[
+    \omega_{0} = \frac{f_{-3dB}}{2 \pi}
+\]
+Il est maintenant facile a déterminer $\tau$ en connaissant la relation
+\[
+    \tau = \frac{1}{\omega_{0}}
+\]
+ou $\omega_{0}$ est la pulsation de cassure a $-3dB$ et aussi la pulsation de coupure vu qu'il s'agit 
+d'un systeme du premiere ordre.
+
+
 \end{document}

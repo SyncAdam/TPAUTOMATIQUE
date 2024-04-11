@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.29)  11 APR 2024 10:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.29)  11 APR 2024 11:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -183,7 +183,7 @@ File: black1.png Graphic file (type png)
 <use black1.png>
 Package pdftex.def Info: black1.png  used on input line 113.
 (pdftex.def)             Requested size: 352.10286pt x 234.74458pt.
- [4 <./black1.png>] (rendu.aux)
+ [4 <./black1.png>] [5] (rendu.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
@@ -196,11 +196,11 @@ Here is how much of TeX's memory you used:
  24607 multiletter control sequences out of 15000+600000
  563891 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,65p,263b,230s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,6n,65p,286b,230s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on rendu.pdf (5 pages, 195104 bytes).
+Output written on rendu.pdf (6 pages, 202681 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
+ 76 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
