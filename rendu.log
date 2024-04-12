@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.29)  11 APR 2024 11:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.29)  11 APR 2024 15:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -76,39 +76,62 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layouthoffset=\dimen154
 \Gm@layoutvoffset=\dimen155
 \Gm@dimlist=\toks19
- (C:\Users\Rendszergazda\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\Rendszergazda\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+ (C:\Users\Rendszergazda\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\Rendszergazda\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+ (C:\Users\Rendszergazda\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (C:\Users\Rendszergazda\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen156
+\captionmargin=\dimen157
+\caption@leftmargin=\dimen158
+\caption@rightmargin=\dimen159
+\caption@width=\dimen160
+\caption@indent=\dimen161
+\caption@parindent=\dimen162
+\caption@hangindent=\dimen163
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count266
+\c@continuedfloat=\count267
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count268
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count269
+) (C:\Users\Rendszergazda\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count266
+\l__color_backend_stack_int=\count270
 \l__pdf_internal_box=\box52
 ) (rendu.aux)
 \openout1 = `rendu.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
  (C:\Users\Rendszergazda\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count267
-\scratchdimen=\dimen156
+\scratchcounter=\count271
+\scratchdimen=\dimen164
 \scratchbox=\box53
-\nofMPsegments=\count268
-\nofMParguments=\count269
+\nofMPsegments=\count272
+\nofMParguments=\count273
 \everyMPshowfont=\toks20
-\MPscratchCnt=\count270
-\MPscratchDim=\dimen157
-\MPnumerator=\count271
-\makeMPintoPDFobject=\count272
+\MPscratchCnt=\count274
+\MPscratchDim=\dimen165
+\MPnumerator=\count275
+\makeMPintoPDFobject=\count276
 \everyMPtoPDFconversion=\toks21
 ) (C:\Users\Rendszergazda\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -150,57 +173,78 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 25.
+(Font)              <14.4> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 25.
+(Font)              <7> on input line 27.
 [1
 
 {C:/Users/Rendszergazda/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [1]
 Chapter 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 66.
+(Font)              <12> on input line 68.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 66.
+(Font)              <8> on input line 68.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 66.
+(Font)              <6> on input line 68.
 [2
 
 ]
 <mesureA1.png, id=18, 803.0pt x 504.88625pt>
 File: mesureA1.png Graphic file (type png)
 <use mesureA1.png>
-Package pdftex.def Info: mesureA1.png  used on input line 82.
+Package pdftex.def Info: mesureA1.png  used on input line 84.
 (pdftex.def)             Requested size: 352.10286pt x 221.38794pt.
 <bode1.png, id=19, 433.62pt x 289.08pt>
 File: bode1.png Graphic file (type png)
 <use bode1.png>
-Package pdftex.def Info: bode1.png  used on input line 100.
+Package pdftex.def Info: bode1.png  used on input line 102.
 (pdftex.def)             Requested size: 352.10286pt x 234.74458pt.
  [3 <./mesureA1.png (PNG copy)> <./bode1.png>]
 <black1.png, id=27, 433.62pt x 289.08pt>
 File: black1.png Graphic file (type png)
 <use black1.png>
-Package pdftex.def Info: black1.png  used on input line 113.
+Package pdftex.def Info: black1.png  used on input line 115.
 (pdftex.def)             Requested size: 352.10286pt x 234.74458pt.
- [4 <./black1.png>] [5] (rendu.aux)
+ [4 <./black1.png>]
+<reponse1erordregenerale.png, id=32, 419.76825pt x 296.90926pt>
+File: reponse1erordregenerale.png Graphic file (type png)
+<use reponse1erordregenerale.png>
+Package pdftex.def Info: reponse1erordregenerale.png  used on input line 161.
+(pdftex.def)             Requested size: 352.10286pt x 249.05775pt.
+ [5 <./reponse1erordregenerale.png>]
+<reponse2ndordresmallz.png, id=38, 419.76825pt x 296.307pt>
+File: reponse2ndordresmallz.png Graphic file (type png)
+<use reponse2ndordresmallz.png>
+Package pdftex.def Info: reponse2ndordresmallz.png  used on input line 199.
+(pdftex.def)             Requested size: 187.78532pt x 132.55473pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 200.
+<reponse2ndordrebigz.png, id=39, 421.575pt x 298.716pt>
+File: reponse2ndordrebigz.png Graphic file (type png)
+<use reponse2ndordrebigz.png>
+Package pdftex.def Info: reponse2ndordrebigz.png  used on input line 204.
+(pdftex.def)             Requested size: 187.78532pt x 133.06265pt.
+ [6 <./reponse2ndordresmallz.png> <./reponse2ndordrebigz.png>] (rendu.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2249 strings out of 474424
- 37083 string characters out of 5737963
+ 3747 strings out of 474424
+ 66214 string characters out of 5737963
  1933496 words of memory out of 5000000
- 24607 multiletter control sequences out of 15000+600000
- 563891 words of font info for 55 fonts, out of 8000000 for 9000
+ 26096 multiletter control sequences out of 15000+600000
+ 564807 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,65p,286b,230s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on rendu.pdf (6 pages, 202681 bytes).
+ 67i,8n,77p,336b,500s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on rendu.pdf (7 pages, 264889 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
+ 103 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

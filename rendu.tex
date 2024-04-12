@@ -9,6 +9,8 @@
 \usepackage{titlesec}
 \usepackage{needspace}
 \usepackage{geometry}
+\usepackage{graphicx} 
+\usepackage{subcaption} %  for subfigures environments 
 
 % Define chapter style without chapter number
 \titleformat{\chapter}[display]
@@ -131,10 +133,13 @@ Dans cette deuxieme partie on va s'interesser a l'identification des systemes, c
 trouver une fonction de transfert, qui décrit au plus proche notre systeme. Il est demandé de tracer
 la \textit{caractéristique statique} de notre systeme, qui est la courbe qui représente la sortie
 en fonction de l'entrée. Lorsque notre systeme est linéaire, la caractéristique statique est
-une droite de pente $A$, l'amplification . En réalité étant donné que le domaine linéaire de la caractéristique statique est
+une droite de pente $A$, l'amplification. En réalité étant donné que le domaine linéaire de la caractéristique statique est
 toujours limité (par exemple par la tension de saturation des amplificateurs opérationnelles), c'est a dire 
 que la droite n'a pas en tant que limite en $\pm \infty$ l'infini, deux points de cassures, a partir desquelles
 la pente devient nulle.
+
+\subsection{Système du première ordre}
+
 Pour les systemes de premiere ordre de type passe-bas, on peut décrire le systeme dans le domaine de Laplace
 par la fonction 
 \[
@@ -151,6 +156,12 @@ signale d'entrée:
 \]
 ou $T_{E}$ est la période du signale d'entrée.
 \par
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{reponse1erordregenerale.png}
+    \caption{Réponse d'un système à première ordre}
+    \label{fig:reponse1erordre}
+\end{figure}
 Lorsqu'on souhaite de mesurer ces caractéristiques avec un entrée harmonique (sinusoidale) on peut soumettre le systeme
 a un signale sinusoidale de fréquence basse, et on mesure le rapport des valeurs maximums des allures des sortie par rapport a 
 l'entrée. Pour trouver $\tau$ on peut mesurer la fréquence de coupure a $-3dB$ en sachant que 
@@ -163,7 +174,37 @@ Il est maintenant facile a déterminer $\tau$ en connaissant la relation
     \tau = \frac{1}{\omega_{0}}
 \]
 ou $\omega_{0}$ est la pulsation de cassure a $-3dB$ et aussi la pulsation de coupure vu qu'il s'agit 
-d'un systeme du premiere ordre.
+d'un systeme du premiere ordre. Voir la figure \ref{fig:reponse1erordre} pour voir l'allure de la réponse
+d'un tel système.
 
+
+
+\subsection{Système du second ordre}
+
+Les systèmes du second ordre de type passe-bas peuvent être décrit dans le domaine de Laplace par 
+la fonction
+
+\[
+  F_{2} (p) =   \frac{A}{1 + 2m \frac{p}{\omega_{0}} + \left( \frac{p}{\omega_{0}} \right)^2}
+\]
+
+ou $A$ est l'amplification dans la bande passante (pour les passe bas l'amplification statique aussi), 
+$m$ est le \textit{coefficient d'amortissement} et $\omega_{0}$ est la pulsation de cassure de la fonction de 
+transfert. Lorsque le coefficient d'amortissement est inférieur à la réponse du système présente
+des \textit{dépassements}, c'est a dire que la réponse prend des valeurs supérieurs à la valeur en régime permanent.
+
+
+\begin{figure}
+    \begin{subfigure}[h!]{0.4\linewidth}
+        \includegraphics[width=\linewidth]{reponse2ndordresmallz.png}
+        \caption{$0 < m < 1$}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[h!]{0.4\linewidth}
+        \includegraphics[width=\linewidth]{reponse2ndordrebigz.png}
+        \caption{$m > 1$}
+    \end{subfigure}%
+    \caption{Réponse d'un système a 2nd ordre}
+\end{figure}
 
 \end{document}
