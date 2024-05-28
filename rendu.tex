@@ -213,6 +213,27 @@ des \textit{dépassements}, c'est a dire que la réponse prend des valeurs supé
     \caption{Réponse d'un système a 2nd ordre}
 \end{figure}
 
+Dans le cas ou $m < 1$, afin de mesurer l'amplification dans la bande passante $A$ on peut mesurer
+la réponse a une échelon en boucle ouverte et comparer le résultat obtenu par rapport a l'entrée. Alors $A = \frac{\Delta S}{\Delta E}$.
+Toujours pour une entrée type échelon, on peut mesurer la premiere dépassement, en prenant la valeur en régime permanent en tant que $100\%$ 
+et mesurant le pique de la premiere dépassement. En ce connaissant, on peut déterminer le coefficient d'amortissement $m$ en utilisant les abaques.
+On peut également mesurer le temps de réponse a $5\%$ qui est le temps ou l'allure de la réponse entre pour la derniere fois dans la bande
+de la valeur en régime permanent $\pm 5\%$ et n'en sors plus. En connaissant déja la valeur du coefficient d'amortissement, on peut utiliser les abaques pour 
+déterminer $\omega_0$.
+
+Lorsqu'on prends $F_2(j\omega_0)$ on obtient:
+
+\[
+    \frac{A}{1 + 2mj - \frac{1}{\omega_0^2}} = \frac{A}{1 - \frac{1}{\omega_0^2} + 2mj}
+\]
+
+d'ou
+
+\[
+    |F_2(j\omega_0)| = \frac{|A|}{|1 - \frac{1}{\omega_0^2} + 2mj|} = \frac{A}{\sqrt{\left( 1 - \frac{1}{\omega_0^2} \right)^2 + \left( 2m \right) ^2}}, \quad   \quad Arg(F_2(j\omega_0)) = -arctan \left( \frac{2m}{1 - \frac{1}{\omega_0^2}}\right)
+\]
+
+
 \section{Asservissement des systemes}
 
 \begin{figure}[h]

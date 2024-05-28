@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.21)  28 MAY 2024 10:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.21)  28 MAY 2024 13:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -360,237 +360,250 @@ File: reponse2ndordrebigz.png Graphic file (type png)
 <use reponse2ndordrebigz.png>
 Package pdftex.def Info: reponse2ndordrebigz.png  used on input line 210.
 (pdftex.def)             Requested size: 187.78532pt x 133.06265pt.
+
+Overfull \hbox (3.57837pt too wide) detected at line 234
+\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 F[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 j![]\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 j \OT1/cmr/m/n/12 = [] = []\OML/cmm/m/it/12 ;   Arg\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 F[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 j![]\OT1/cmr/m/n/12 )) = \OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 arctan []
+ []
+
 <schemablock2.png, id=107, 680.5425pt x 140.525pt>
 File: schemablock2.png Graphic file (type png)
 <use schemablock2.png>
-Package pdftex.def Info: schemablock2.png  used on input line 220.
+Package pdftex.def Info: schemablock2.png  used on input line 241.
 (pdftex.def)             Requested size: 352.10286pt x 72.7046pt.
- [6 <./reponse2ndordresmallz.png> <./reponse2ndordrebigz.png> <./schemablock2.png>] [7] [8] [9] [10]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6 <./reponse2ndordresmallz.png> <./reponse2ndordrebigz.png>] [7 <./schemablock2.png>] [8] [9] [10]
 <schemasimulink1.png, id=143, 672.71326pt x 160.80075pt>
 File: schemasimulink1.png Graphic file (type png)
 <use schemasimulink1.png>
-Package pdftex.def Info: schemasimulink1.png  used on input line 469.
+Package pdftex.def Info: schemasimulink1.png  used on input line 490.
 (pdftex.def)             Requested size: 352.10286pt x 84.16647pt.
 <s1simk5.png, id=145, 362.5545pt x 277.63725pt>
 File: s1simk5.png Graphic file (type png)
 <use s1simk5.png>
-Package pdftex.def Info: s1simk5.png  used on input line 480.
+Package pdftex.def Info: s1simk5.png  used on input line 501.
 (pdftex.def)             Requested size: 187.78532pt x 143.80452pt.
 <s1simk55.png, id=146, 361.35pt x 275.22826pt>
 File: s1simk55.png Graphic file (type png)
 <use s1simk55.png>
-Package pdftex.def Info: s1simk55.png  used on input line 485.
+Package pdftex.def Info: s1simk55.png  used on input line 506.
 (pdftex.def)             Requested size: 187.78532pt x 143.03133pt.
 <s1simk2.png, id=147, 357.13425pt x 278.2395pt>
 File: s1simk2.png Graphic file (type png)
 <use s1simk2.png>
-Package pdftex.def Info: s1simk2.png  used on input line 490.
+Package pdftex.def Info: s1simk2.png  used on input line 511.
 (pdftex.def)             Requested size: 187.78532pt x 146.30293pt.
 <s1simk27.png, id=148, 362.5545pt x 277.63725pt>
 File: s1simk27.png Graphic file (type png)
 <use s1simk27.png>
-Package pdftex.def Info: s1simk27.png  used on input line 495.
+Package pdftex.def Info: s1simk27.png  used on input line 516.
 (pdftex.def)             Requested size: 187.78532pt x 143.80452pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 <s1simk5tr.png, id=149, 573.342pt x 275.8305pt>
 File: s1simk5tr.png Graphic file (type png)
 <use s1simk5tr.png>
-Package pdftex.def Info: s1simk5tr.png  used on input line 505.
+Package pdftex.def Info: s1simk5tr.png  used on input line 526.
 (pdftex.def)             Requested size: 187.78532pt x 90.34251pt.
 <s1simk55tr.png, id=150, 572.1375pt x 275.8305pt>
 File: s1simk55tr.png Graphic file (type png)
 <use s1simk55tr.png>
-Package pdftex.def Info: s1simk55tr.png  used on input line 510.
+Package pdftex.def Info: s1simk55tr.png  used on input line 531.
 (pdftex.def)             Requested size: 187.78532pt x 90.5319pt.
 <s1sim2tr.png, id=151, 570.33075pt x 280.04625pt>
 File: s1sim2tr.png Graphic file (type png)
 <use s1sim2tr.png>
-Package pdftex.def Info: s1sim2tr.png  used on input line 515.
+Package pdftex.def Info: s1sim2tr.png  used on input line 536.
 (pdftex.def)             Requested size: 187.78532pt x 92.20615pt.
 <s1simk27tr.png, id=152, 573.342pt x 278.2395pt>
 File: s1simk27tr.png Graphic file (type png)
 <use s1simk27tr.png>
-Package pdftex.def Info: s1simk27tr.png  used on input line 520.
+Package pdftex.def Info: s1simk27tr.png  used on input line 541.
 (pdftex.def)             Requested size: 187.78532pt x 91.13153pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 <schemasimulink2.png, id=154, 697.4055pt x 172.84575pt>
 File: schemasimulink2.png Graphic file (type png)
 <use schemasimulink2.png>
-Package pdftex.def Info: schemasimulink2.png  used on input line 539.
+Package pdftex.def Info: schemasimulink2.png  used on input line 560.
 (pdftex.def)             Requested size: 352.10286pt x 87.26662pt.
-[11 <./schemasimulink1.png> <./s1simk5.png> <./s1simk55.png> <./s1simk2.png> <./s1simk27.png>]
-<sim1ti1tauerreur.png, id=167, 572.73975pt x 278.2395pt>
-File: sim1ti1tauerreur.png Graphic file (type png)
-<use sim1ti1tauerreur.png>
-Package pdftex.def Info: sim1ti1tauerreur.png  used on input line 551.
-(pdftex.def)             Requested size: 215.95956pt x 104.9127pt.
-<sim1ti1tau1erdepassement.png, id=168, 573.342pt x 280.04625pt>
-File: sim1ti1tau1erdepassement.png Graphic file (type png)
-<use sim1ti1tau1erdepassement.png>
-Package pdftex.def Info: sim1ti1tau1erdepassement.png  used on input line 556.
-(pdftex.def)             Requested size: 215.95956pt x 105.48285pt.
-<sim1ti1tautr5prc.png, id=169, 572.1375pt x 280.04625pt>
-File: sim1ti1tautr5prc.png Graphic file (type png)
-<use sim1ti1tautr5prc.png>
-Package pdftex.def Info: sim1ti1tautr5prc.png  used on input line 561.
-(pdftex.def)             Requested size: 215.95956pt x 105.70505pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<sim1t5tautr5prc&1erdep.png, id=170, 572.73975pt x 277.63725pt>
+<sim1ti1tauerreur.png, id=155, 572.73975pt x 278.2395pt>
+File: sim1ti1tauerreur.png Graphic file (type png)
+<use sim1ti1tauerreur.png>
+Package pdftex.def Info: sim1ti1tauerreur.png  used on input line 572.
+(pdftex.def)             Requested size: 215.95956pt x 104.9127pt.
+<sim1ti1tau1erdepassement.png, id=156, 573.342pt x 280.04625pt>
+File: sim1ti1tau1erdepassement.png Graphic file (type png)
+<use sim1ti1tau1erdepassement.png>
+Package pdftex.def Info: sim1ti1tau1erdepassement.png  used on input line 577.
+(pdftex.def)             Requested size: 215.95956pt x 105.48285pt.
+<sim1ti1tautr5prc.png, id=157, 572.1375pt x 280.04625pt>
+File: sim1ti1tautr5prc.png Graphic file (type png)
+<use sim1ti1tautr5prc.png>
+Package pdftex.def Info: sim1ti1tautr5prc.png  used on input line 582.
+(pdftex.def)             Requested size: 215.95956pt x 105.70505pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<sim1t5tautr5prc&1erdep.png, id=158, 572.73975pt x 277.63725pt>
 File: sim1t5tautr5prc&1erdep.png Graphic file (type png)
 <use sim1t5tautr5prc&1erdep.png>
-Package pdftex.def Info: sim1t5tautr5prc&1erdep.png  used on input line 570.
+Package pdftex.def Info: sim1t5tautr5prc&1erdep.png  used on input line 591.
 (pdftex.def)             Requested size: 215.95956pt x 104.68562pt.
-<sim1t5tauerrur.png, id=171, 572.73975pt x 277.63725pt>
+<sim1t5tauerrur.png, id=159, 572.73975pt x 277.63725pt>
 File: sim1t5tauerrur.png Graphic file (type png)
 <use sim1t5tauerrur.png>
-Package pdftex.def Info: sim1t5tauerrur.png  used on input line 575.
+Package pdftex.def Info: sim1t5tauerrur.png  used on input line 596.
 (pdftex.def)             Requested size: 215.95956pt x 104.68562pt.
-<sim1t10tautr5prc.png, id=172, 573.94424pt x 278.2395pt>
+[11 <./schemasimulink1.png>]
+<sim1t10tautr5prc.png, id=169, 573.94424pt x 278.2395pt>
 File: sim1t10tautr5prc.png Graphic file (type png)
 <use sim1t10tautr5prc.png>
-Package pdftex.def Info: sim1t10tautr5prc.png  used on input line 584.
+Package pdftex.def Info: sim1t10tautr5prc.png  used on input line 605.
 (pdftex.def)             Requested size: 215.95956pt x 104.69193pt.
-<sim1t10tauerrur.png, id=173, 572.73975pt x 278.84175pt>
+<sim1t10tauerrur.png, id=170, 572.73975pt x 278.84175pt>
 File: sim1t10tauerrur.png Graphic file (type png)
 <use sim1t10tauerrur.png>
-Package pdftex.def Info: sim1t10tauerrur.png  used on input line 589.
+Package pdftex.def Info: sim1t10tauerrur.png  used on input line 610.
 (pdftex.def)             Requested size: 215.95956pt x 105.13979pt.
-[12 <./s1simk5tr.png> <./s1simk55tr.png> <./s1sim2tr.png> <./s1simk27tr.png> <./schemasimulink2.png> <./sim1t5tautr5prc&1erdep.png> <./sim1t5tauerrur.png>]
-<diagrammblacks1tau1.png, id=193, 406.51875pt x 311.36325pt>
+ [12 <./s1simk5.png> <./s1simk55.png> <./s1simk2.png> <./s1simk27.png> <./sim1t5tautr5prc&1erdep.png> <./sim1t5tauerrur.png> <./sim1t10tautr5prc.png> <./sim1t10tauerrur.png>]
+<diagrammblacks1tau1.png, id=190, 406.51875pt x 311.36325pt>
 File: diagrammblacks1tau1.png Graphic file (type png)
 <use diagrammblacks1tau1.png>
-Package pdftex.def Info: diagrammblacks1tau1.png  used on input line 610.
+Package pdftex.def Info: diagrammblacks1tau1.png  used on input line 631.
 (pdftex.def)             Requested size: 215.95956pt x 165.40657pt.
-<diagrammblacks1tau5.png, id=194, 407.72325pt x 311.9655pt>
+<diagrammblacks1tau5.png, id=191, 407.72325pt x 311.9655pt>
 File: diagrammblacks1tau5.png Graphic file (type png)
 <use diagrammblacks1tau5.png>
-Package pdftex.def Info: diagrammblacks1tau5.png  used on input line 615.
+Package pdftex.def Info: diagrammblacks1tau5.png  used on input line 636.
 (pdftex.def)             Requested size: 215.95956pt x 165.23619pt.
-<diagrammblacks1tau10.png, id=195, 380.622pt x 302.3295pt>
+<diagrammblacks1tau10.png, id=192, 380.622pt x 302.3295pt>
 File: diagrammblacks1tau10.png Graphic file (type png)
 <use diagrammblacks1tau10.png>
-Package pdftex.def Info: diagrammblacks1tau10.png  used on input line 620.
+Package pdftex.def Info: diagrammblacks1tau10.png  used on input line 641.
 (pdftex.def)             Requested size: 215.95956pt x 171.54074pt.
- [13 <./sim1ti1tauerreur.png> <./sim1ti1tau1erdepassement.png> <./sim1ti1tautr5prc.png> <./sim1t10tautr5prc.png> <./sim1t10tauerrur.png>]
-<sim1123tr5prc1erdep.png, id=208, 573.342pt x 278.84175pt>
+ [13 <./s1simk5tr.png> <./s1simk55tr.png> <./s1sim2tr.png> <./s1simk27tr.png> <./schemasimulink2.png>] [14 <./sim1ti1tauerreur.png> <./sim1ti1tau1erdepassement.png> <./sim1ti1tautr5prc.png> <./diagrammblacks1tau1.png> <./diagrammblacks1tau5.png> <./diagrammblacks1tau10.png>]
+<sim1123tr5prc1erdep.png, id=216, 573.342pt x 278.84175pt>
 File: sim1123tr5prc1erdep.png Graphic file (type png)
 <use sim1123tr5prc1erdep.png>
-Package pdftex.def Info: sim1123tr5prc1erdep.png  used on input line 638.
+Package pdftex.def Info: sim1123tr5prc1erdep.png  used on input line 659.
 (pdftex.def)             Requested size: 187.78532pt x 91.32878pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 639--639
+Underfull \hbox (badness 10000) in paragraph at lines 660--660
 []\OT1/cmr/m/n/10.95 (a) |Mesure pre-miere d^^Sepassement,
  []
 
-<sim1123erreur.png, id=209, 573.342pt x 278.2395pt>
+<sim1123erreur.png, id=217, 573.342pt x 278.2395pt>
 File: sim1123erreur.png Graphic file (type png)
 <use sim1123erreur.png>
-Package pdftex.def Info: sim1123erreur.png  used on input line 643.
+Package pdftex.def Info: sim1123erreur.png  used on input line 664.
 (pdftex.def)             Requested size: 187.78532pt x 91.13153pt.
 
-Overfull \hbox (16.12332pt too wide) in paragraph at lines 650--653
+Overfull \hbox (16.12332pt too wide) in paragraph at lines 671--674
 []\OT1/cmr/m/n/12 Lorsqu'on ap-plique le $\OML/cmm/m/it/12 T[]$ \OT1/cmr/m/n/12 trouv^^Se dans la par-tie pr^^Sec^^Sedente pour avoir un pre-miere d^^Sepassement
  []
 
-[14 <./diagrammblacks1tau1.png> <./diagrammblacks1tau5.png> <./diagrammblacks1tau10.png> <./sim1123tr5prc1erdep.png> <./sim1123erreur.png>]
-<sim2kpourerreur10prc.png, id=222, 573.342pt x 277.63725pt>
+<sim2kpourerreur10prc.png, id=219, 573.342pt x 277.63725pt>
 File: sim2kpourerreur10prc.png Graphic file (type png)
 <use sim2kpourerreur10prc.png>
-Package pdftex.def Info: sim2kpourerreur10prc.png  used on input line 669.
+Package pdftex.def Info: sim2kpourerreur10prc.png  used on input line 690.
 (pdftex.def)             Requested size: 187.78532pt x 90.93427pt.
-<sim2kpourerreur10prcdeptr.png, id=223, 572.1375pt x 275.8305pt>
+<sim2kpourerreur10prcdeptr.png, id=220, 572.1375pt x 275.8305pt>
 File: sim2kpourerreur10prcdeptr.png Graphic file (type png)
 <use sim2kpourerreur10prcdeptr.png>
-Package pdftex.def Info: sim2kpourerreur10prcdeptr.png  used on input line 674.
+Package pdftex.def Info: sim2kpourerreur10prcdeptr.png  used on input line 695.
 (pdftex.def)             Requested size: 187.78532pt x 90.5319pt.
 
-Underfull \hbox (badness 7649) in paragraph at lines 675--675
+Underfull \hbox (badness 7649) in paragraph at lines 696--696
 []\OT1/cmr/m/n/10.95 (b) |Mesure pre-miere d^^Sepassement,
  []
 
-<sim2kpourerreur2prcerreur.png, id=224, 573.342pt x 278.84175pt>
+<sim2kpourerreur2prcerreur.png, id=221, 573.342pt x 278.84175pt>
 File: sim2kpourerreur2prcerreur.png Graphic file (type png)
 <use sim2kpourerreur2prcerreur.png>
-Package pdftex.def Info: sim2kpourerreur2prcerreur.png  used on input line 686.
+Package pdftex.def Info: sim2kpourerreur2prcerreur.png  used on input line 707.
 (pdftex.def)             Requested size: 187.78532pt x 91.32878pt.
-<sim2kpourerreur2prcdeptr.png, id=225, 573.342pt x 278.2395pt>
+<sim2kpourerreur2prcdeptr.png, id=222, 573.342pt x 278.2395pt>
 File: sim2kpourerreur2prcdeptr.png Graphic file (type png)
 <use sim2kpourerreur2prcdeptr.png>
-Package pdftex.def Info: sim2kpourerreur2prcdeptr.png  used on input line 691.
+Package pdftex.def Info: sim2kpourerreur2prcdeptr.png  used on input line 712.
 (pdftex.def)             Requested size: 187.78532pt x 91.13153pt.
 
-Underfull \hbox (badness 7649) in paragraph at lines 692--692
+Underfull \hbox (badness 7649) in paragraph at lines 713--713
 []\OT1/cmr/m/n/10.95 (b) |Mesure pre-miere d^^Sepassement,
  []
 
-[15 <./sim2kpourerreur10prc.png> <./sim2kpourerreur10prcdeptr.png> <./sim2kpourerreur2prcerreur.png> <./sim2kpourerreur2prcdeptr.png>]
-<sim2ti1erreur.png, id=237, 572.1375pt x 278.84175pt>
+[15 <./sim1123tr5prc1erdep.png> <./sim1123erreur.png> <./sim2kpourerreur10prc.png> <./sim2kpourerreur10prcdeptr.png>]
+<sim2ti1erreur.png, id=234, 572.1375pt x 278.84175pt>
 File: sim2ti1erreur.png Graphic file (type png)
 <use sim2ti1erreur.png>
-Package pdftex.def Info: sim2ti1erreur.png  used on input line 714.
+Package pdftex.def Info: sim2ti1erreur.png  used on input line 735.
 (pdftex.def)             Requested size: 187.78532pt x 91.52023pt.
-<sim2ti1tr.png, id=238, 573.94424pt x 278.2395pt>
+<sim2ti1tr.png, id=235, 573.94424pt x 278.2395pt>
 File: sim2ti1tr.png Graphic file (type png)
 <use sim2ti1tr.png>
-Package pdftex.def Info: sim2ti1tr.png  used on input line 719.
+Package pdftex.def Info: sim2ti1tr.png  used on input line 740.
 (pdftex.def)             Requested size: 187.78532pt x 91.03387pt.
-<sim2ti2erreur.png, id=239, 570.933pt x 278.84175pt>
+<sim2ti2erreur.png, id=236, 570.933pt x 278.84175pt>
 File: sim2ti2erreur.png Graphic file (type png)
 <use sim2ti2erreur.png>
-Package pdftex.def Info: sim2ti2erreur.png  used on input line 734.
+Package pdftex.def Info: sim2ti2erreur.png  used on input line 755.
 (pdftex.def)             Requested size: 187.78532pt x 91.7117pt.
-<sim2ti2tr.png, id=240, 575.14874pt x 278.84175pt>
+<sim2ti2tr.png, id=237, 575.14874pt x 278.84175pt>
 File: sim2ti2tr.png Graphic file (type png)
 <use sim2ti2tr.png>
-Package pdftex.def Info: sim2ti2tr.png  used on input line 739.
+Package pdftex.def Info: sim2ti2tr.png  used on input line 760.
 (pdftex.def)             Requested size: 187.78532pt x 91.03944pt.
-<sim2ti3errur.png, id=241, 575.751pt x 280.04625pt>
+ [16 <./sim2kpourerreur2prcerreur.png> <./sim2kpourerreur2prcdeptr.png> <./sim2ti1erreur.png> <./sim2ti1tr.png>]
+<sim2ti3errur.png, id=249, 575.751pt x 280.04625pt>
 File: sim2ti3errur.png Graphic file (type png)
 <use sim2ti3errur.png>
-Package pdftex.def Info: sim2ti3errur.png  used on input line 755.
+Package pdftex.def Info: sim2ti3errur.png  used on input line 776.
 (pdftex.def)             Requested size: 187.78532pt x 91.3387pt.
-<sim2ti3deptr.png, id=242, 570.933pt x 275.22826pt>
+<sim2ti3deptr.png, id=250, 570.933pt x 275.22826pt>
 File: sim2ti3deptr.png Graphic file (type png)
 <use sim2ti3deptr.png>
-Package pdftex.def Info: sim2ti3deptr.png  used on input line 760.
+Package pdftex.def Info: sim2ti3deptr.png  used on input line 781.
 (pdftex.def)             Requested size: 187.78532pt x 90.52322pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--761
+Underfull \hbox (badness 10000) in paragraph at lines 782--782
 []\OT1/cmr/m/n/10.95 (b) |Temps de r^^Seponse, pre-miere
  []
 
-[16 <./sim2ti1erreur.png> <./sim2ti1tr.png> <./sim2ti2erreur.png> <./sim2ti2tr.png>]
-<sim2ti4.png, id=254, 369.17924pt x 275.8305pt>
+<sim2ti4.png, id=251, 369.17924pt x 275.8305pt>
 File: sim2ti4.png Graphic file (type png)
 <use sim2ti4.png>
-Package pdftex.def Info: sim2ti4.png  used on input line 778.
+Package pdftex.def Info: sim2ti4.png  used on input line 799.
 (pdftex.def)             Requested size: 281.68515pt x 210.4709pt.
-<sim2ti1diag.png, id=255, 401.70074pt x 310.761pt>
+[17 <./sim2ti2erreur.png> <./sim2ti2tr.png> <./sim2ti3errur.png> <./sim2ti3deptr.png>]
+<sim2ti1diag.png, id=262, 401.70074pt x 310.761pt>
 File: sim2ti1diag.png Graphic file (type png)
 <use sim2ti1diag.png>
-Package pdftex.def Info: sim2ti1diag.png  used on input line 790.
+Package pdftex.def Info: sim2ti1diag.png  used on input line 811.
 (pdftex.def)             Requested size: 187.78532pt x 145.27528pt.
-<sim2ti2diag.png, id=256, 401.0985pt x 310.15875pt>
+<sim2ti2diag.png, id=263, 401.0985pt x 310.15875pt>
 File: sim2ti2diag.png Graphic file (type png)
 <use sim2ti2diag.png>
-Package pdftex.def Info: sim2ti2diag.png  used on input line 795.
+Package pdftex.def Info: sim2ti2diag.png  used on input line 816.
 (pdftex.def)             Requested size: 187.78532pt x 145.20671pt.
-<sim2ti3diag.png, id=257, 398.08725pt x 310.761pt>
+<sim2ti3diag.png, id=264, 398.08725pt x 310.761pt>
 File: sim2ti3diag.png Graphic file (type png)
 <use sim2ti3diag.png>
-Package pdftex.def Info: sim2ti3diag.png  used on input line 800.
+Package pdftex.def Info: sim2ti3diag.png  used on input line 821.
 (pdftex.def)             Requested size: 187.78532pt x 146.5935pt.
-<sim2ti4diag.png, id=258, 396.2805pt x 313.17pt>
+<sim2ti4diag.png, id=265, 396.2805pt x 313.17pt>
 File: sim2ti4diag.png Graphic file (type png)
 <use sim2ti4diag.png>
-Package pdftex.def Info: sim2ti4diag.png  used on input line 805.
+Package pdftex.def Info: sim2ti4diag.png  used on input line 826.
 (pdftex.def)             Requested size: 187.78532pt x 148.40367pt.
- [17 <./sim2ti3errur.png> <./sim2ti3deptr.png> <./sim2ti4.png>] [18 <./sim2ti1diag.png> <./sim2ti2diag.png> <./sim2ti3diag.png> <./sim2ti4diag.png>] (rendu.aux)
+ [18 <./sim2ti4.png> <./sim2ti1diag.png> <./sim2ti2diag.png> <./sim2ti3diag.png> <./sim2ti4diag.png>] [19] (rendu.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
@@ -603,17 +616,17 @@ Package rerunfilecheck Info: File `rendu.out' has not changed.
 (rerunfilecheck)             Checksum: BD136B7A30501EC71F4556EFC9D07BCC;1897.
  ) 
 Here is how much of TeX's memory you used:
- 11056 strings out of 474370
- 182848 string characters out of 5736759
- 1942754 words of memory out of 5000000
+ 11057 strings out of 474370
+ 182855 string characters out of 5736759
+ 1945754 words of memory out of 5000000
  33294 multiletter control sequences out of 15000+600000
  564807 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,8n,79p,370b,547s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Rendszergazda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on rendu.pdf (19 pages, 1135783 bytes).
+Output written on rendu.pdf (20 pages, 1140093 bytes).
 PDF statistics:
- 356 PDF objects out of 1000 (max. 8388607)
- 63 named destinations out of 1000 (max. 500000)
+ 360 PDF objects out of 1000 (max. 8388607)
+ 64 named destinations out of 1000 (max. 500000)
  325 words of extra memory for PDF output out of 10000 (max. 10000000)
 
