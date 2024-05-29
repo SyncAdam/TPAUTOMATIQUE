@@ -69,7 +69,7 @@ et si le contraire se passe, il s'agit d'un coupe-bande.
 \subsection{Pratique}
 \subsubsection{Systeme 1}
 
-Apres avoir branché la premiere sortie de la boite sur la générateur et l'oscilloscope, on a déterminer que
+Apres avoir branché la premiere sortie de la boite sur le générateur et l'oscilloscope, on a déterminer que
 notre systeme est de type passe-bas, puisque pour des fréquences faibles, l'amplification variait peu, mais en augmentant
 la fréquence de l'entrée l'amplification mesurée sur la sortie diminuait. Pour tracer le diagramme de 
 Bode et de Black, on mesure d'abord la fréquence de coupure a $-3 dB$. Pour faire cela on soumets le systeme a 
@@ -142,6 +142,25 @@ Pour le systeme 2, on constate qu'en variant la fréquence d'entrée sinusoidale
 nous soupçonnons que le systeme peut pas etre modélisé par un systeme d'ordre 1 puisque ces systemes
 ne présentes jamais des résonances. Ainsi on va modéliser le systeme par un systeme d'ordre 2.
 
+Pour une entrée sinusoidale, on mesure la réponse de systeme par rapport a l'entrée ainsi que le déphasage afin d'obtenir 
+le diagramme de Bode et de Black:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{bode2.png}
+    \caption{Diagramme de Bode pour la seconde sortie}
+    \label{fig:diagBlack1}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{black2.png}
+    \caption{Diagramme de Black pour la seconde sortie}
+    \label{fig:diagBlack1}
+\end{figure}
+
+Il est possible de déterminer la marge de phase en calculant graphiquement la différence entre -180° et le point d'intersection de la courbe avec l'axe des abscisses. Ici on obtient $M_p = 55deg$
+On voit bien sur le diagramme de Bode que la fonction de transfert présente une résonance, ainsi il est plutot réaliste de modéliser
+ce systeme par un systeme de seconde ordre.
 \section{Réponse indicielle}
 
 \par
@@ -512,6 +531,12 @@ Pour ce $T_i$ le temps de réponse a $5\%$ peut etre retrouvé en utilisant les 
     t_{r5\%dep5\%} \cdot \omega_0 = 3 \Rightarrow t_{r5\%dep5\%} = \frac{3}{\omega_0} = 0,09s = 90ms
 \]
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{bilan1.png}
+    \caption{Bilan des calcule des correcteurs proportionnels}
+\end{figure}
+
 \subsection{Système 2}
 
 Le second système peut etre modelisé par une fonction de transfert du second ordre.
@@ -624,7 +649,7 @@ a chaque fois par les valeurs calculées.
 
 Nos mesures des erreurs statiques sont exactement les que nous avons calculé.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \begin{subfigure}[h!]{0.4\linewidth}
         \includegraphics[width=\linewidth]{s1simk5tr.png}
         \caption{$K_{sp1.1} = 5$}
@@ -773,13 +798,19 @@ qui implique que la stabilité du systeme augmente si $T_i$ augmente.
 
 Lorsqu'on applique le $T_i$ trouvé dans la partie précédente pour avoir un premiere dépassement de $5\%$
 ($T_i = 0.0764$) on mesure un premiere dépassement de $5\%$, un temps de réponse de $86ms$ et une erreur statique nulle (figure \ref{fig:tipour5prc}).
-Dans nos calcules de la section précédente, on a trouvé un temps de réponse de $90ms$ donc nos résultats sont coéhrentes.
+Dans nos calcules de la section précédente, on a trouvé un temps de réponse de $90ms$ donc nos résultats sont cohérentes.
 
 On peut ainsi comparer les resultats des correcteurs proportionnel et intégral. D'une part, le correcteur
 proportionnel ne présente jamais des dépassementes en corrigant un systeme de premiere ordre, qui garanti 
 que nos composants ne seront pas surchargés. Lorsqu'on augmente la valeur de $K$ pour le correcteur proportionnel 
 on augmente, et lorsqu'on augmente $T_i$ du correcteur intégral, on diminue la nerveusité du systeme. Le correcteur proportionnel présente
 une erreur statique tendis que l'integral n'en a pas (pour les entrée type échelon). 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{bilan2.png}
+    \caption{Bilan apres simulation}
+\end{figure}
 
 \subsection{Systeme d'ordre 2}
 
@@ -802,8 +833,8 @@ proportionnel. On prendra les valeurs de $K$ trouvés précédamment: $K_{2.1} =
     \label{fig:sim2Kpour10prc}
 \end{figure}
 
-Pour $K_{2.1} = 4.5$ on trouve une erreur statique de $10\%$, une premiere dépassement de $43.8\%$ et un temps de
-réponse a $5\%$ de $1.332s$ ce qui sont cohérentes avec les résultats précédentes (sauf le dépassement [on a trouvé $60\%$ mais mesuré $43.8\%$]).
+Pour $K_{2.1} = 4.5$ on trouve une erreur statique de $10\%$, une premiere dépassement de $44.1\%$ et un temps de
+réponse a $5\%$ de $0.139s$ ce qui sont cohérentes avec les résultats précédentes (sauf le dépassement [on a trouvé $60\%$ mais mesuré $44.1\%$], la lecture des abaques peut entrainer des erreurs).
 
 \begin{figure}[H]
     \begin{subfigure}[h!]{0.4\linewidth}
@@ -819,8 +850,8 @@ réponse a $5\%$ de $1.332s$ ce qui sont cohérentes avec les résultats précé
     \label{fig:sim2Kpour10prc}
 \end{figure}
 
-Pour $K_{2.2} = 24.5$ on retrouve une erreur statique de $2\%$, et on mesure une premiere dépassement de $75.9\%$ et un temps de réponse de 
-$1.265s$. Ici les resulats sont plus cohérentes avec celles calculées.
+Pour $K_{2.2} = 24.5$ on retrouve une erreur statique de $2\%$, et on mesure une premiere dépassement de $77.1\%$ et un temps de réponse de 
+$0.134s$. Ici les resulats sont plus cohérentes avec celles calculées.
 
 On peut conclure que plus $K$ augmente, plus le systeme devient nerveux: les premieres dépassements sont de plus en plus importantes, mais l'erreur statique diminue.
 Une premiere dépassement de presque $80\%$ dans le cas de $K_{2.2}$ peut etre considéré comme trop grand dans certains applications, ainsi, augmenter la valeur de $K$ afin de 
@@ -935,5 +966,11 @@ spécifique, le régime transitoire n'a pas l'aire de se finir.
 
 On remarque sur les diagrammes de Black, que plus $T_i$ est grand, plus le systeme est stable puisque la marge de phase augmente,
 mais pour $T_i = 0.022805$ la marge de phase devient négatif, ainsi le systeme n'est pas stable.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{bilan3.png}
+    \caption{Bilan apres simulation}
+\end{figure}
 
 \end{document}
