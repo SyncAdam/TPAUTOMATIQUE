@@ -125,9 +125,17 @@ $-180$ et le point d'intersection de la courbe avec l'axe des abscisses. Dans no
 \[
     M_{ph} = -57 - (-180) = 123 
     \]
-La marge de phase est orienté selon les valeurs de l'abscisse croissantes.\par
+La marge de phase est orienté selon les valeurs de l'abscisse croissantes.\par 
+
+En regardant les allures de diagrammes de Black et Bode, on peut remarquer que la modélisatoin du systeme par un systeme d'ordre
+1 semble raisonnable.
+
 
 \subsubsection{Systeme 2}
+
+Pour le systeme 2, on constate qu'en variant la fréquence d'entrée sinusoidale, au début l'amplification augmente, ainsi
+nous soupçonnons que le systeme peut pas etre modélisé par un systeme d'ordre 1 puisque ces systemes
+ne présentes jamais des résonances. Ainsi on va modéliser le systeme par un systeme d'ordre 2.
 
 \section{Réponse indicielle}
 
@@ -182,6 +190,16 @@ ou $\omega_{0}$ est la pulsation de cassure a $-3dB$ et aussi la pulsation de co
 d'un systeme du premiere ordre. Voir la figure \ref{fig:reponse1erordre} 
 pour voir l'allure de la réponse
 d'un tel système.
+
+En appliquant un signale d'entrée constant (en pratique on met un signale carré), on obtient une réponse
+comme dans la figure 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{mesureA1.png}
+    \caption{Réponse de systeme 1 de la boite}
+    \label{fig:reponse1ersys}
+\end{figure}
 
 
 
@@ -417,7 +435,7 @@ Le second système peut etre modelisé par une fonction de transfert du second o
     F_2(s) = \frac{A_2}{1 + 2 m \frac{s}{\omega_0} + \left( \frac{s}{\omega_0}\right)^2}
 \]
 
-avec $A_2 = 2$, $m = 0,5$ et $\omega_0 = 4,63$
+avec $A_2 = 2$, $m = 0,5$ et $\omega_0 = 43,85$
 
 En utilisant un correcteur proportionnel on obtient:
 \[
@@ -433,7 +451,7 @@ avec $K_{BF2} = \frac{K_2A_2}{1 + K_2A_2}$, $\omega_0' = \omega_0 \sqrt{1 + K_2A
 \]
 
 On remarque que l'effet d'augmenter $K_2$ est la diminution du coefficient d'amortissement $m'$ qui implique
-l'augmentation de la nerveusité du système.  
+l'augmentation de la nerveusité du système.
 
 On cherche a calculer $K$ pour obtenir une erreur statique de $10\%$, avec
 
@@ -448,8 +466,8 @@ $$
 
 Il est ainsi possible de déterminer l'amplitude du premiere dépassement, en calculant le coefficient
 d'amortissement de la fonction de transfert du systeme en boucle fermée, et regardant les abaques. On retrouve $m'_1 = \frac{m}{\sqrt{1+K_{10}A_2}} = 0.158114$ qui nous laisse montrer depuis les abaques que 
-le systeme présente une premiere dépassement de $60\%$. On également calculer le temps de réponse a $5\%$ une fois qu'on calcule $\omega'_{10} = \omega_0 \sqrt{1 + K_{10}A_2} = 14.641$. Depuis les abaques, pour $m = 0.15$, $t_{r5\%}\omega_0 = 20$
-, d'ou $t_{r5\%} = 1.366s$
+le systeme présente une premiere dépassement de $60\%$. On également calculer le temps de réponse a $5\%$ une fois qu'on calcule $\omega'_{10} = \omega_0 \sqrt{1 + K_{10}A_2} = 138.665$. Depuis les abaques, pour $m = 0.15$, $t_{r5\%}\omega_0 = 20$
+, d'ou $t_{r5\%} = 0.144s$
 
 
 De meme facon on peut retrouver pour une erreur de $2\%$
@@ -461,7 +479,7 @@ pour lequel:
 $$
     m'_{2} = 0.0707
 $$
-a partir duquel on déduit une premiere dépassement de $80\%$. On cherche alors $\omega'_{2} = \omega_0 \sqrt{1 + K_{2p}A_2} = 32.739$, d'ou $t_{r5\%} = \frac{40}{32.739} = 1.221s$
+a partir duquel on déduit une premiere dépassement de $80\%$. On cherche alors $\omega'_{2} = \omega_0 \sqrt{1 + K_{2p}A_2} = 310.066$, d'ou $t_{r5\%} = \frac{40}{310,0663} = 0.129s$
 
 
 \section{Simulation des asservissements}
@@ -727,7 +745,7 @@ diminuer l'erreur statique n'est peut etre pas la meilleur solution.
 On peut dans un second temps regarder l'influence d'un correcteur intégrale sur la correction du systeme. On prendra les valeurs définis dans le TP:
 
 \[
-    T_{i1} = 4.319654 \quad T_{i2} = 2.159827 \quad T_{i3} = 1.079913 \quad T_{i4} = 0.215982
+    T_{i1} = 0.456 \quad T_{i2} = 0.22805 \quad T_{i3} = 0.114025 \quad T_{i4} = 0.022805
 \]
 
 \begin{figure}[H]
@@ -740,15 +758,15 @@ On peut dans un second temps regarder l'influence d'un correcteur intégrale sur
         \includegraphics[width=\linewidth]{sim2ti1tr.png}
         \caption{Temps de réponse}
     \end{subfigure}
-    \caption{Simulation avec $T_i = 4.3195654$}
+    \caption{Simulation avec $T_i = 0.456$}
     \label{fig:sim2KTi1}
 \end{figure}
 
 \[
-    t_{r5\%Ti1} =   6.141s \quad
+    t_{r5\%Ti1} = 0.641s \quad
 \]
 
-Pour le premiere $T_i = 4.3195654$ on retrouve une erreur statique nulle, un temps de réponse de $6.141s$ et il n'y a pas de dépassement.
+Pour le premiere $T_i = 0.456$ on retrouve une erreur statique nulle, un temps de réponse de $0.641s$ et il n'y a pas de dépassement.
 
 \begin{figure}[H]
     \begin{subfigure}[h!]{0.4\linewidth}
@@ -760,15 +778,15 @@ Pour le premiere $T_i = 4.3195654$ on retrouve une erreur statique nulle, un tem
         \includegraphics[width=\linewidth]{sim2ti2tr.png}
         \caption{Temps de réponse}
     \end{subfigure}
-    \caption{Simulation avec $T_i = 2.159827$}
+    \caption{Simulation avec $T_i = 0.22805$}
     \label{fig:sim2KTi2}
 \end{figure}
 
 \[
-    t_{r5\%Ti2} =   2.798s \quad
+    t_{r5\%Ti2} = 0.298s \quad
 \]
 
-Pour $T_i = 2.195827$ on retrouve une erreur statique nulle, un temps de réponse de $2.798s$ et il n'y a pas de dépassement.
+Pour $T_i = 0.22805$ on retrouve une erreur statique nulle, un temps de réponse de $ 0.298s$ et il n'y a pas de dépassement.
 La rapidité du systeme a augmenté en diminuant la valeur de $T_i$
 
 \begin{figure}[H]
@@ -781,16 +799,16 @@ La rapidité du systeme a augmenté en diminuant la valeur de $T_i$
         \includegraphics[width=\linewidth]{sim2ti3deptr.png}
         \caption{Temps de réponse, premiere dépassement}
     \end{subfigure}
-    \caption{Simulation avec $T_i = 1.07991$}
+    \caption{Simulation avec $T_i = 0.114025$}
     \label{fig:sim2KTi3}
 \end{figure}
 
 \[
-    t_{r5\%Ti3} =   2.254s \quad
+    t_{r5\%Ti3} = 0.233s \quad
 \]
 
-Pour $T_i = 1.07991$ on retrouve une erreur statique nulle, un temps de réponse de $2.254s$ et une premiere dépassement de
-$12.2\%$. On remarque que c'est la nerveusité du systeme qui augmente en diminuant $T_i$, puisqu'avant il n'y avait pas de dépassement.
+Pour $T_i = 0.114025$ on retrouve une erreur statique nulle, un temps de réponse de $0.233s$ et une premiere dépassement de
+$12.1\%$. On remarque que c'est la nerveusité du systeme qui augmente en diminuant $T_i$, puisqu'avant il n'y avait pas de dépassement.
 
 
 \begin{figure}[H]
@@ -803,34 +821,34 @@ $12.2\%$. On remarque que c'est la nerveusité du systeme qui augmente en diminu
     \label{fig:sim2KTi4}
 \end{figure}
 
-Pour $T_i = 0.215982$ on trouve que le systeme devient instable. En effet le systeme n'a pas l'aire de converger vers une valeur 
+Pour $T_i = 0.022805$ on trouve que le systeme devient instable. En effet le systeme n'a pas l'aire de converger vers une valeur 
 spécifique, le régime transitoire n'a pas l'aire de se finir. 
 
 \begin{figure}[H]
     \begin{subfigure}[h!]{0.4\linewidth}
         \includegraphics[width=\linewidth]{sim2ti1diag.png}
-        \caption{$T_i = 4.3195654$}
+        \caption{$T_i = 0.456$}
     \end{subfigure}
     \hfill    
     \begin{subfigure}[h!]{0.4\linewidth}
         \includegraphics[width=\linewidth]{sim2ti2diag.png}
-        \caption{$T_i = 2.159827$}
+        \caption{$T_i = 0.22805$}
     \end{subfigure}    
     \hfill    
     \begin{subfigure}[h!]{0.4\linewidth}
         \includegraphics[width=\linewidth]{sim2ti3diag.png}
-        \caption{$T_i = 1.07991$}
+        \caption{$T_i = 0.114025$}
     \end{subfigure}
     \hfill    
     \begin{subfigure}[h!]{0.4\linewidth}
         \includegraphics[width=\linewidth]{sim2ti4diag.png}
-        \caption{$T_i = 0.215982$}
+        \caption{$T_i = 0.022805$}
     \end{subfigure}
     \caption{Diagrammes de Black}
     \label{fig:sim2Tiblacks}
 \end{figure}
 
 On remarque sur les diagrammes de Black, que plus $T_i$ est grand, plus le systeme est stable puisque la marge de phase augmente,
-mais pour $T_i = 0.215982$ la marge de phase devient négatif, ainsi le systeme n'est pas stable.
+mais pour $T_i = 0.022805$ la marge de phase devient négatif, ainsi le systeme n'est pas stable.
 
 \end{document}
