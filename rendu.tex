@@ -49,7 +49,7 @@ Lorsque le systeme étudié est \textit{linéaire}, on observe en sortie un sign
 pour une entrée de signale sinusoidale. Il est donc possible d'écrire la \textit{fonction de transfert}
 du systeme étudié, qui décrit les caractéristiques du signale de sortie par rapport
 a celui d'entrée. La fonction de transfert est une fonction complexe dont le module
-représente \textit{l'amplification dans la bande passante} du systeme, c'est-a-dire pour une entrée constant dans le temps
+représente \textit{l'amplification dans la bande passante} du systeme, c'est-a-dire pour une entrée constante dans le temps
 par combien le systeme amplifie-t-il le signale d'entrée (ou le mot "amplifie" ne signifie pas
 forcément une augmentation de la valeur du signale), et dont l'argument représente le \textit{déphasage} du signale
 de sortie par rapport a l'entrée, c'est a dire par combien (mesuré en radians) est la sortie en retard
@@ -276,7 +276,7 @@ des \textit{dépassements}, c'est a dire que la réponse prend des valeurs supé
 \end{figure}
 
 Dans le cas ou $m < 1$, afin de mesurer l'amplification dans la bande passante $A$ on peut mesurer
-la réponse a une échelon en boucle ouverte et comparer le résultat obtenu par rapport a l'entrée. Alors $A = \frac{\Delta S}{\Delta E}$ (ainsi sans unité).
+la réponse a un échelon en boucle ouverte et comparer le résultat obtenu par rapport a l'entrée. Alors $A = \frac{\Delta S}{\Delta E}$ (ainsi sans unité).
 Toujours pour une entrée type échelon, on peut mesurer la premiere dépassement, en prenant la valeur en régime permanent en tant que $100\%$ 
 et mesurant le pique de la premiere dépassement. En ce connaissant, on peut déterminer le coefficient d'amortissement $m$ en utilisant les abaques.
 On peut également mesurer le temps de réponse a $5\%$ qui est le temps ou l'allure de la réponse entre pour la derniere fois dans la bande
@@ -751,7 +751,7 @@ systeme est lant (moins rapide), moins il présente des dépassements. On peut c
     1 - \frac{\mbox{valeur mesuré en régime permanent}}{\mbox{valeur attendu en régime permanent}} 
 \].
 
-La valeur du premiere dépassement diminue, ainsi d'apres tout les éléments présentés on peut conclure que le systeme
+La valeur du premier dépassement diminue, ainsi d'apres tout les éléments présentés on peut conclure que le systeme
 devient moins nerveux en augmentant $T_i$.
 
 \begin{figure}[H]
@@ -773,7 +773,7 @@ devient moins nerveux en augmentant $T_i$.
     \label{fig:diagrammblacks}
 \end{figure}
 
-D'apres les diagrammes de Black (figures \ref{fig:diagrammblacks}), on peut calculer la \textit{marge de phase}:
+D'après les diagrammes de Black (figures \ref{fig:diagrammblacks}), on peut calculer la \textit{marge de phase}:
 
 \[
     \Delta \Phi_1 = 180 - 139 = 41 deg \quad  \Delta \Phi_2 = 180 - 108 = 72 deg \quad \Delta \Phi_3 = 180 - 100 = 80 deg 
@@ -798,13 +798,13 @@ qui implique que la stabilité du systeme augmente si $T_i$ augmente.
 
 Lorsqu'on applique le $T_i$ trouvé dans la partie précédente pour avoir un premiere dépassement de $5\%$
 ($T_i = 0.0764$) on mesure un premiere dépassement de $5\%$, un temps de réponse de $86ms$ et une erreur statique nulle (figure \ref{fig:tipour5prc}).
-Dans nos calcules de la section précédente, on a trouvé un temps de réponse de $90ms$ donc nos résultats sont cohérentes.
+Dans nos calculs de la section précédente, on a trouvé un temps de réponse de $90ms$ donc nos résultats sont cohérentes.
 
-On peut ainsi comparer les resultats des correcteurs proportionnel et intégral. D'une part, le correcteur
-proportionnel ne présente jamais des dépassementes en corrigant un systeme de premiere ordre, qui garanti 
+On peut ainsi comparer les résultats des correcteurs proportionnels et intégraux. D'une part, le correcteur
+proportionnel ne présente jamais des dépassementes en corrige un système de premier ordre, qui garantit 
 que nos composants ne seront pas surchargés. Lorsqu'on augmente la valeur de $K$ pour le correcteur proportionnel 
 on augmente, et lorsqu'on augmente $T_i$ du correcteur intégral, on diminue la nerveusité du systeme. Le correcteur proportionnel présente
-une erreur statique tendis que l'integral n'en a pas (pour les entrée type échelon). 
+une erreur statique tendis que l'integral n'en a pas (pour les entrée type échelon).
 
 \begin{figure}[H]
     \centering
@@ -816,8 +816,7 @@ une erreur statique tendis que l'integral n'en a pas (pour les entrée type éch
 
 \subsubsection{Correcteur proportionnel}
 
-Dans un premier temps, on va simuler le systeme 2, modelisé par une fonction de transfert d'ordre 2, avec un correcteur
-proportionnel. On prendra les valeurs de $K$ trouvés précédamment: $K_{2.1} = 4.5$, $K_{2.2} = 24.5$.
+Dans un premier temps, on va simuler le système 2, modélisé par une fonction de transfert d'ordre 2, avec un correcteur proportionnel. On prendra les valeurs de $K$ trouvés précédamment: $K_{2.1} = 4.5$, $K_{2.2} = 24.5$.
 
 \begin{figure}[H]
     \begin{subfigure}[h!]{0.4\linewidth}
@@ -853,12 +852,12 @@ réponse a $5\%$ de $0.139s$ ce qui sont cohérentes avec les résultats précé
 Pour $K_{2.2} = 24.5$ on retrouve une erreur statique de $2\%$, et on mesure une premiere dépassement de $77.1\%$ et un temps de réponse de 
 $0.134s$. Ici les resulats sont plus cohérentes avec celles calculées.
 
-On peut conclure que plus $K$ augmente, plus le systeme devient nerveux: les premieres dépassements sont de plus en plus importantes, mais l'erreur statique diminue.
-Une premiere dépassement de presque $80\%$ dans le cas de $K_{2.2}$ peut etre considéré comme trop grand dans certains applications, ainsi, augmenter la valeur de $K$ afin de 
+On peut conclure que plus $K$ augmente, plus le système devient nerveux: les premières dépassements sont de plus en plus importants, mais l'erreur statique diminue.
+Un premier dépassement de $80 \%\%$ dans le cas de $K_{2.2}$ Peut-être considéré comme trop grand dans certaines applications, ainsi, augmenter la valeur de $K$ afin de 
 diminuer l'erreur statique n'est peut etre pas la meilleur solution.
 
 \subsubsection{Correcteur intégral}
-On peut dans un second temps regarder l'influence d'un correcteur intégrale sur la correction du systeme. On prendra les valeurs définis dans le TP:
+On peut dans un second temps regarder l'influence d'un correcteur intégral sur la correction du système. On prendra les valeurs définies dans le TP:
 
 \[
     T_{i1} = 0.456 \quad T_{i2} = 0.22805 \quad T_{i3} = 0.114025 \quad T_{i4} = 0.022805
@@ -923,8 +922,8 @@ La rapidité du systeme a augmenté en diminuant la valeur de $T_i$
     t_{r5\%Ti3} = 0.233s \quad
 \]
 
-Pour $T_i = 0.114025$ on retrouve une erreur statique nulle, un temps de réponse de $0.233s$ et une premiere dépassement de
-$12.1\%$. On remarque que c'est la nerveusité du systeme qui augmente en diminuant $T_i$, puisqu'avant il n'y avait pas de dépassement.
+Pour $T_i = 0.114025$ on retrouve une erreur statique nulle, un temps de réponse de $0.233s$ et un premier dépassement de
+$12.1\%$. On remarque que c'est la nervosité du système qui augmente en diminuant $T_i$, puisque vant il n'y avait pas de dépassement.
 
 
 \begin{figure}[H]
@@ -937,8 +936,8 @@ $12.1\%$. On remarque que c'est la nerveusité du systeme qui augmente en diminu
     \label{fig:sim2KTi4}
 \end{figure}
 
-Pour $T_i = 0.022805$ on trouve que le systeme devient instable. En effet le systeme n'a pas l'aire de converger vers une valeur 
-spécifique, le régime transitoire n'a pas l'aire de se finir. 
+Pour $T_i = 0.022805$ on trouve que le système devient instable. En effet le système n'a pas l'aire de converger vers une valeur 
+spécifique, le régime transitoire n'a pas l'aire de se finir.
 
 \begin{figure}[H]
     \begin{subfigure}[h!]{0.4\linewidth}
@@ -964,8 +963,8 @@ spécifique, le régime transitoire n'a pas l'aire de se finir.
     \label{fig:sim2Tiblacks}
 \end{figure}
 
-On remarque sur les diagrammes de Black, que plus $T_i$ est grand, plus le systeme est stable puisque la marge de phase augmente,
-mais pour $T_i = 0.022805$ la marge de phase devient négatif, ainsi le systeme n'est pas stable.
+On remarque sur les diagrammes de Black, que plus $T_i$ est grand, plus le système est stable puisque la marge de phase augmente;
+mais pour $T_i = 0.022805$ la marge de phase devient négative, ainsi le système n'est pas stable.
 
 \begin{figure}[H]
     \centering
