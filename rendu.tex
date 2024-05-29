@@ -37,7 +37,8 @@ d'une boite.
 Le but est d'identifier, modéliser les systemes, puis les asservir. Nous avons
 effectué ces études sur la boite numéro 10.\par
 Pour étudier ces systemes, on utilise un générateur a basse fréquences,
-une oscilloscope et une alimentation afin d'alimenter la boite.
+une oscilloscope et une alimentation afin d'alimenter la boite. Pour l'asservissement on utilisera des amplificateurs opérationnelle ainsi que
+des résistances et condensateurs.
 \nopagebreak
 
 \chapter{Étude}
@@ -59,7 +60,11 @@ ou en avance par rapport a l'entrée.
 Si on souhaite étudier, en tracant les diagrammes de Bode ou de Black, tels
 systemes, il est important de d'abord déterminer la nature du systeme. Pour ce 
 déterminer, on soumets le systeme a des fréquences de grandeur différentes et on
-compare les sorties. Si le systeme blah blah blah
+compare les sorties. Si le systeme donne des réponses similaires pour des basses fréquences,
+mais lorsqu'on augmente la fréquence la réponse diminue, il s'agit un systeme type passe-bas. Dans le cas contraire,
+si pour les hautes fréquences la réponse a l'aire de ne pas changer, mais en la diminuant la réponse diminue, il s'agit d'un systeme type
+passe-haut. Lorsque la réponse diminue pour des valeurs de fréquences basses et hautes, il s'agit d'une passe-bande,
+et si le contraire se passe, il s'agit d'un coupe-bande.
 
 \subsection{Pratique}
 \subsubsection{Systeme 1}
@@ -73,11 +78,9 @@ de l'entrée pour obtenir l'amplification dans la bande passante $A$ de notre sy
 vu qu'on sait que le systeme est un filtre de type passe-bas, qu'on le soumets a un échelon
 (avec le générateur on délivre un signale carré de faible fréquence), et on mesure l'amplitude de  
 la sortie en \textit{régime permanent} c'est-a-dire lorsque la variation de l'amplitude de la réponse 
-est faible. Ceci est garanti par le fait que le systeme soit linéaire. La régime permanent est visible sur la figure %\ref{fig:mesureA1}
+est faible. La régime permanent est visible sur la figure \ref{fig:mesureA1}
 dans une \textit{demi-période} du signale de la sortie lorsque la courbe devient horizontale.
 \par
-
-\pagebreak
 
 Ici on a mesuré $A = 1.8$
 
@@ -87,6 +90,8 @@ Ici on a mesuré $A = 1.8$
     \caption{Image de l'oscilloscope lors la mesure de $A$ pour le premiere systeme}
     \label{fig:mesureA1}
 \end{figure}
+
+Pour la suite on mesure l'amplification pour les entrées sinusoidales.
 
 Une fois $A$ connue, sachant que la fréquence de 
 coupure a $-3 dB$ $f_{-3dB}$ représente
@@ -112,7 +117,7 @@ qu'une valeur de $7.4 Hz$ corresponderais mieux sur le graphe pour $f_{-3dB}$ ma
 expérimentalement on a mesuré un déphasage de $-45 \deg$ a une fréquence de $7.2 Hz$, c'est pour 
 cela qu'on a décidé de guarder cette valeur.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.75\textwidth]{black1.png}
     \caption{Diagramme de Black pour le premiere systeme}
@@ -123,7 +128,7 @@ Il est possible de déterminer la marge de phase en calculant graphiquement depu
 , la difference entre 
 $-180$ et le point d'intersection de la courbe avec l'axe des abscisses. Dans notre cas:
 \[
-    M_{ph} = -57 - (-180) = 123 
+    M_{ph} = -57 - (-180) = 123 deg
     \]
 La marge de phase est orienté selon les valeurs de l'abscisse croissantes.\par 
 
@@ -201,7 +206,27 @@ comme dans la figure
     \label{fig:reponse1ersys}
 \end{figure}
 
+Le systeme ne présente pas de dépassements et de plus quand le signale d'entrée change de valeur, la pente
+en la réponse n'est pas nulle, ainsi il est raisonnable de modéliser ce systeme par un systeme de premiere ordre.
+On est alors capable de mesurer l'amplification (déja fait, $A = 1.8$) et le temps de réponse afin d'obtenir le constant de temps $\tau$
+sachant que le temps de réponse a $5\%$ est égale a 3 fois $\tau$. On obtient alors $\tau = 0.021667$, d'ou on propose comme modele:
+\[
+    F_1(p) = \frac{1.8}{1 + 0.021667p}  
+\]
 
+On remarque que le systeme est stable, avec une valeur finale de $1.8$ fois l'entrée. En le mesurant pour plusieur valeurs,
+on est capable de tracer la caractéristique statique de ce systeme, en représentant la valeur en régime permanent de la sortie par rapport 
+a la valeur de l'entrée:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{caracteristiquestatiquesys1.png}
+    \caption{Caractéristique statique systeme 1}
+    \label{fig:carstattiquesys1}
+\end{figure}
+
+On en déduit que la zone de linéarité de ce systeme est entre $\pm 7$. Avec les valeurs spécifiques on est capable de déterminer
+la valeur de la pente de la droite dans la zone linéaire, qui est autour de $1.8$ pour ce systeme qui est l'amplification dans la bande passante de notre systeme.
 
 \subsection{Système du second ordre}
 
@@ -232,7 +257,7 @@ des \textit{dépassements}, c'est a dire que la réponse prend des valeurs supé
 \end{figure}
 
 Dans le cas ou $m < 1$, afin de mesurer l'amplification dans la bande passante $A$ on peut mesurer
-la réponse a une échelon en boucle ouverte et comparer le résultat obtenu par rapport a l'entrée. Alors $A = \frac{\Delta S}{\Delta E}$.
+la réponse a une échelon en boucle ouverte et comparer le résultat obtenu par rapport a l'entrée. Alors $A = \frac{\Delta S}{\Delta E}$ (ainsi sans unité).
 Toujours pour une entrée type échelon, on peut mesurer la premiere dépassement, en prenant la valeur en régime permanent en tant que $100\%$ 
 et mesurant le pique de la premiere dépassement. En ce connaissant, on peut déterminer le coefficient d'amortissement $m$ en utilisant les abaques.
 On peut également mesurer le temps de réponse a $5\%$ qui est le temps ou l'allure de la réponse entre pour la derniere fois dans la bande
@@ -242,15 +267,75 @@ déterminer $\omega_0$.
 Lorsqu'on prends $F_2(j\omega_0)$ on obtient:
 
 \[
-    \frac{A}{1 + 2mj - \frac{1}{\omega_0^2}} = \frac{A}{1 - \frac{1}{\omega_0^2} + 2mj}
+    \frac{A}{1 + 2mj - 1} = \frac{A}{2mj}
 \]
 
 d'ou
 
 \[
-    |F_2(j\omega_0)| = \frac{|A|}{|1 - \frac{1}{\omega_0^2} + 2mj|} = \frac{A}{\sqrt{\left( 1 - \frac{1}{\omega_0^2} \right)^2 + \left( 2m \right) ^2}}, \quad   \quad Arg(F_2(j\omega_0)) = -arctan \left( \frac{2m}{1 - \frac{1}{\omega_0^2}}\right)
+    |F_2(j\omega_0)| = \frac{|A|}{|2mj|} = \frac{A}{2m}, \quad   \quad Arg(F_2(j\omega_0)) = Arg(\frac{A}{2mj}) = Arg(A) - Arg(2mj) = -\frac{\pi}{2}
 \]
 
+Ainsi pour un essai harmonique, lorsqu'on retrouve la fréquence $f$ ou le déphasage est $-\frac{\pi}{2}rad$ on retrouve $\omega_0 = \frac{2\pi}{f}$, 
+En mesurant la réponse (soit $v_0$ la valeur mesurée) en cette fréquence on peut déduire que $v_0 = \frac{A}{2m} \Rightarrow m = \frac{A}{2v_0}$.
+
+Pour notre systeme on applique un signale type échelon sur l'entrée. On obtient l'allure suivante:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{secondsortiemesureA.png}
+    \caption{Mesure de A second sortie}
+    \label{fig:mesureA2}
+\end{figure}
+
+On peut mesurer la valeur en régime de la réponse par rapport a l'entrée, ici on obtient $A = 2$. En ce faisant pour des
+valeurs différentes d'entrée on peut, comme pour le premiere systeme, obtenir la caractéristique statique:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{caracteristiquestatiquesys2.png}
+    \caption{Caractéristique statique sortie 2}
+    \label{fig:carstattiquesys2}
+\end{figure}
+
+Cette caractéristique nous donne une pente proche de $2$ qui est notre amplification dans la bande passante et 
+on remarque que la zone de linéarité est entre autour $\pm 6.5 V$.
+
+Depuis le figure \ref{fig:mesureA2} on remarque que le systeme présente des dépassement, ainsi excluant la possibilité
+de modéliser le systeme par un systeme de premiere ordre. On remarque également que la pente n'est pas nulle la ou l'entrée bascule.
+C'est pour ces raisons la, qu'on propose d'étudier ce systeme comme un systeme de second ordre. On peut alors mesurer ces caractéristiques ($A = 2$ déja fait).
+Le systeme soit alors de forme:
+
+\[
+    \frac{A}{1 + 2m\frac{p}{\omega_0} + \left( \frac{p}{\omega_0} \right)^2}  
+\]
+
+On peut chercher le coefficient d'amortissement $m$, en mesurant la valeur de la premiere dépassement:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{secondsortie1erdepassementpourcent.png}
+    \caption{Mesure de la premiere dépassement}
+    \label{fig:1erdepassementsortie2}
+\end{figure}
+
+En connaissant ce valeur (dans notre cas $15\%$), on peut utiliser les abaques pour déterminer $m$.
+On obtient $m = 0.5$ pour notre systeme. On peut ensuite mesurer le temps de réponse a $5\%$:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{secondsortietr5pourcent.png}
+    \caption{Mesure du temps de réponse}
+    \label{fig:tr5prcsortie2}
+\end{figure}
+
+En utilisant les abaques, on obtient $t_{r5\%} \cdot \omega_0 = 5$, d'ou 
+$\omega_0 = \frac{5}{0.108} = 46.3 rad/s$. Pour la suite, on a pris $\omega_0 = 43.85 rad/s$ puisqu'en refaisant la mesure, on a obtenu une valeur légerement différente pour
+le temps de réponse de notre systeme. De ce qui précéde, nous proposons comme modele pour la seconde sortie de la boite:
+
+\[
+    F_2(p) = \frac{2}{0.00052p^2 + 0.0228p + 1}
+\]
 
 \section{Asservissement des systemes}
 
